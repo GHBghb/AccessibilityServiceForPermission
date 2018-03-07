@@ -1,0 +1,3 @@
+[submodule "module-accessibility-json"]
+ path = module-accessibility-json
+ url =  git@github.com:XingXiaoGang/module-accessibility-json.git

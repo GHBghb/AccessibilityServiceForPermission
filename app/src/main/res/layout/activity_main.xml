@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.xingxiaogang.testfingerprint.MainActivity">
+
+    <com.example.xingxiaogang.testfingerprint.view.BorderLableLinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/open_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:enabled="false"
+            android:text="开始验证指纹" />
+
+        <Button
+            android:id="@+id/open_accessibility_permission"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="打开辅助权限" />
+
+
+        <Button
+            android:id="@+id/start_accessibility"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="开始辅助设置" />
+
+    </com.example.xingxiaogang.testfingerprint.view.BorderLableLinearLayout>
+
+    <com.example.xingxiaogang.testfingerprint.view.BorderLableLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/open_float_permission"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="打开悬浮窗授权" />
+
+        <Button
+            android:id="@+id/open_autostart_permission"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="打开自启动授权" />
+        <Button
+            android:id="@+id/open_protect_permission"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="打开受保护授权" />
+
+    </com.example.xingxiaogang.testfingerprint.view.BorderLableLinearLayout>
+
+
+</LinearLayout>

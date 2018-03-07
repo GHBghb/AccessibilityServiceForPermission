@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion Integer.parseInt(CompileSdkVersion)
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        applicationId "com.gang.demo.accessibility"
+        minSdkVersion Integer.parseInt(MinSdkVersion)
+        targetSdkVersion Integer.parseInt(TargetSdkVersion)
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':module-accessibility-json')
+}
